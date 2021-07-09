@@ -1,23 +1,36 @@
-const Card = ({imageUrl, name, tags, downloadCount, description}) => {
-    return ( 
-        <div className="bg-white rounded shadow-md w-1/3 p-6">
-            <div className="flex justify-center">
-            <img src="python.png" alt="python" className="w-20 h-20"></img>
-            </div>
-            <div className="flex justify-between mt-5">
-            <Link href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">
-                <span className="text-gray-500 cursor-pointer font-bold text-lg">Python</span>
-            </Link>
-            <span className="text-indigo-600 font-semibold text-lg">38.6M downloads</span>
-            </div>
-            <div className="my-2">
-            <p className="text-gray-500">A Visual Studio Code extension with rich support for the Python language (for all actively supported versions of the language: >=3.6), including features such as IntelliSense (Pylance), linting, debugging, code navigation, code formatting, refactoring, variable explorer, test explorer, and more!</p>
-            </div>
-            <div className="bg-indigo-200 rounded-full py-2 px-4 w-min">
-            <span>Python</span>
-            </div>
+const Card = ({imageUrl, extensionUrl, name, download, description, tags}) => {
+  return ( 
+    <div className="bg-white rounded shadow-md p-6 mb-3 hover:shadow-lg transition duration-100 ease-out">
+      <div className="flex justify-center">
+        <a target="_blank" href={extensionUrl}>
+          <img src={imageUrl} alt="python" className="w-20 h-20 cursor-pointer"></img>
+        </a>
+      </div>
+      <div className="flex justify-between mt-5 items-center">
+        <a target="_blank" href={extensionUrl}>
+          <span className="text-gray-500 cursor-pointer font-bold text-lg">{name}</span>
+        </a>
+      </div>
+      <div className="my-2">
+        <p className="text-gray-500">{description}</p>
+      </div>
+      <div className="flex justify-end">
+        <div className="flex flex-row flex-nowrap">
+          <a target="_blank" href={extensionUrl}>
+            <span className="text-darken font-semibold text-lg cursor-pointer inline">{download}</span>
+            <svg class="h-6 w-6 inline-block text-darken" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />  <polyline points="7 11 12 16 17 11" />  <line x1="12" y1="4" x2="12" y2="16" /></svg>
+          </a>
         </div>
-    );
+      </div>
+      {/* <div className="flex flex-row w-full">
+        {tags.map((tag, index) => (
+          <div key={index} className="bg-lighten text-white font-semibold rounded-full py-1 px-3 w-min inline mr-2 cursor-pointer">
+            <span>{tag}</span>
+          </div>
+        ))}
+      </div> */}
+    </div>
+  );
 }
  
 export default Card;
