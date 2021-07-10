@@ -5,7 +5,7 @@ const Card = ({imageUrl, extensionUrl, name, download, description, tags}) => {
     <div className="bg-white rounded shadow-md p-6 mb-3 hover:shadow-lg transition duration-100 ease-out cursor-hover">
       <a target="_blank" href={extensionUrl} rel="noreferrer">
       <div className="flex justify-center">
-        <Image src={imageUrl} alt="python" className="w-20 h-20 cursor-pointer"></Image>
+        <Image src={imageUrl} alt="extension icon" className="w-20 h-20 cursor-pointer" layout='fill'></Image>
       </div>
       <div className="flex justify-between mt-5 items-center">
         <span className="text-gray-500 cursor-pointer font-bold text-lg">{name}</span>
