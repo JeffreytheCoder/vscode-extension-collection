@@ -186,4 +186,4 @@ export const extensions = [{
   extensionUrl: 'https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case',
   description: "Quickly change case of a word to upper, camel, constant, and more conventions",
   tags: ['General'],
-}, ]
+}]
