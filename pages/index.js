@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Card from "/components/card";
-import { extensions, tags } from "/components/json";
+import Card from "../components/Card"
+import { extensions, tags } from "../components/json";
 import Head from "next/head";
 import Image from 'next/image';
 
