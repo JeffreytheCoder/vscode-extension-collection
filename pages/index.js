@@ -40,7 +40,10 @@ export default function Home() {
         </div>
 
         {/* add */}
+        <a target="_blank" href="https://096w44xmskp.typeform.com/to/J0pH9gPa">
         <button className="bg-darken text-white absolute top-5 right-5 rounded py-2 px-4 font-semibold text-lg shadow-lg hover:bg-primary duration-100 ease-out">Add yours</button>
+        </a>
+  
 
         {/* title */}
         <div className="flex justify-center mb-8">
