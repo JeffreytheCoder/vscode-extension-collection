@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "../components/card";
 import { extensions, tags } from "../components/json";
 import Head from "next/head";
+import Image from 'next/image';
 
 export default function Home() {
   const [displayItems, setDisplayItems] = useState([]);
@@ -53,7 +54,7 @@ export default function Home() {
 
         {/* title */}
         <div className="flex justify-center mb-8">
-          <img src="vscode.png" className="w-40 h-40"></img>
+          <Image src="vscode.png" className="w-40 h-40" alt="vscode icon"></Image>
         </div>
         <h1 className="text-darken text-center text-4xl font-bold mb-5">Must-have vscode extensions for developers 🔨</h1>
         <h2 className="text-gray-500 text-center text-xl">Find and download the productivity booster for your tech stack!</h2>
