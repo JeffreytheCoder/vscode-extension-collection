@@ -1,7 +1,7 @@
 const Card = ({imageUrl, extensionUrl, name, download, description, tags}) => {
   return ( 
     <div className="bg-white rounded shadow-md p-6 mb-3 hover:shadow-lg transition duration-100 ease-out cursor-hover">
-      <a target="_blank" href={extensionUrl}>
+      <a target="_blank" href={extensionUrl} rel="noreferrer">
       <div className="flex justify-center">
         <img src={imageUrl} alt="python" className="w-20 h-20 cursor-pointer"></img>
       </div>
